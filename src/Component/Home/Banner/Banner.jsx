@@ -13,18 +13,18 @@ const Banner = () => {
                     <h3 className='text-7xl font-bold leading-snug'>Gym Gives you the
                         <br />perfect<span className='text-rose-600'> Health</span>
                     </h3>
-                    <p className='font-semibold text-[#2c2d38] lg:w-3/4 text-xl '>
+                    <p className='font-semibold text-[#36424d]  text-2xl '>
                         It is a long established fact that a reader will be by readable content of a page when are the best product.
                     </p>
                     {/* banner btn */}
                     <div className='flex items-center gap-4'>
                         <div>
-                            <button className="btn btn-error">Oder now</button>
+                        <button className="btn btn-outline text-2xl btn-secondary">Oder now</button>
                         </div>
                         <div className='flex items-center gap-3'>
                             <SiGoogledisplayandvideo360 />
                             {/* Open the modal using document.getElementById('ID').showModal() method */}
-                            <button className="font-2xl font-semibold" onClick={() => document.getElementById('my_modal_2').showModal()}>watch Now</button>
+                            <button className="text-2xl font-semibold" onClick={() => document.getElementById('my_modal_2').showModal()}>watch Now</button>
                             <dialog id="my_modal_2" className="modal">
                                 <div className="modal-box">
                                     {/* video */}
@@ -39,7 +39,7 @@ const Banner = () => {
                 </div>
                 {/* banner img */}
                     <div>
-                        <img src={bannerImg} className='w-full' alt="" />
+                        <img src={bannerImg}  alt="" />
                     </div>
             </div>
             
