@@ -24,13 +24,13 @@ const Testimonial = () => {
                         clickable: true,
                     }}
                     modules={[Pagination]}
-                    className="mySwiper"
+                    className="mySwiper w-full"
                 >
                     {
                         testimonial.map(item=>{
                           return  <SwiperSlide key={item.id}>
                             {/* style */}
-                            <div className="card w-full font-fontIbm bg-slate-100 py-10 hover:shadow-lg hover:bg-green-200 shadow-xl">
+                            <div className="card w-full  font-fontIbm bg-slate-100 py-10 hover:shadow-lg hover:bg-green-200 shadow-xl">
                                 <div className="card-body">
                                     <div className='flex items-center gap-6'>
                                         <div>

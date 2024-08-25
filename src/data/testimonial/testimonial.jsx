@@ -24,7 +24,7 @@ const testimonial = [
     },
     {
       id: 5,
-      name: "Ariana",
+      name: "Borsha",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
       img: "https://picsum.photos/103/103",
       delay: 1.1,
@@ -39,6 +39,20 @@ const testimonial = [
     {
       id: 7,
       name: "Ariana",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+      img: "https://picsum.photos/103/103",
+      delay: 1.1,
+    },
+    {
+      id: 8,
+      name: "Prosanta",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+      img: "https://picsum.photos/104/104",
+      delay: 0.8,
+    },
+    {
+      id: 9,
+      name: "Shamim",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
       img: "https://picsum.photos/103/103",
       delay: 1.1,

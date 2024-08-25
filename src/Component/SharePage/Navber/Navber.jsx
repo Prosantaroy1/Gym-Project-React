@@ -11,10 +11,10 @@ const Navber = () => {
             <nav className='container  font-fontIbm justify-between py-10 mx-auto items-center flex px-3 md:px-0'>
                 {/* nav logo */}
                 <div>
-                    <h3 className='text-5xl  font-bold'>Brother <span className='text-rose-600'>GYM</span></h3>
+                    <h3 className='lg:text-5xl text-3xl font-bold'>Brother <span className='text-rose-600'>GYM</span></h3>
                 </div>
                 {/* nav menu link */}
-                <div className='hidden md:block'>
+                <div className='hidden lg:block'>
                     <ul className='flex items-center gap-8 text-gray-600'>
                         {
                             navMenu.map((item) => {
