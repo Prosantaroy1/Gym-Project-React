@@ -5,7 +5,7 @@ import Footer from '../Component/SharePage/Footer/Footer';
 
 const Main = () => {
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <Navber/>
             <Outlet/>
             <Footer/>
