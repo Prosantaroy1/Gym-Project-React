@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SiGoogledisplayandvideo360 } from 'react-icons/si';
 import bannerImg from '../../../assets/New folder/banner/dumbell-Bcy4gPfV.png'
-import bannerImg2 from '../../../assets/New folder/banner/bg-BiCRh3MN.png'
+// aos animation
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+    // 
+    useEffect(() => {
+        AOS.init({ duration: "1000" });
+    }, [])
+
     return (
 
-        <div className='bg-gradient-to-r from-[#ecdecf] 40% to-[#fff] to-60%'>
+        <div className='bg-gradient-to-r from-[#ecdecf] 40% to-[#fff] to-60% py-24'>
             <div className='container  mx-auto py-6 md:py-28 grid items-center grid-cols-1 md:grid-cols-2 '>
                 {/* banner title */}
-                <div className='font-fontIbm space-y-8'>
+                <div className='font-fontIbm space-y-8' data-aos="fade-right">
                     <h3 className='text-7xl font-bold leading-snug'>Gym Gives you the
                         <br />perfect<span className='text-rose-600'> Health</span>
                     </h3>
@@ -19,7 +26,7 @@ const Banner = () => {
                     {/* banner btn */}
                     <div className='flex items-center gap-4'>
                         <div>
-                        <button className="btn btn-outline text-2xl btn-secondary">Oder now</button>
+                            <button className="btn btn-outline text-2xl btn-secondary">Oder now</button>
                         </div>
                         <div className='flex items-center gap-3'>
                             <SiGoogledisplayandvideo360 />
@@ -38,11 +45,11 @@ const Banner = () => {
                     </div>
                 </div>
                 {/* banner img */}
-                    <div>
-                        <img src={bannerImg}  alt="" />
-                    </div>
+                <div data-aos="fade-left">
+                    <img src={bannerImg} alt="" className='w-full'/>
+                </div>
             </div>
-            
+
         </div>
     );
 };

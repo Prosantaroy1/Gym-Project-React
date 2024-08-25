@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+// aos animation
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CarePage = ({img}) => {
+    //
+    useEffect(() => {
+        AOS.init({ duration: "1500" });
+    }, [])
+
     return (
         <div className='mt-36 container mx-auto grid bg-slate-50 items-center grid-cols-1 md:grid-cols-2'>
             {/* img part */}
-            <div>
+            <div data-aos="zoom-in">
                 <img src={img} alt="" />
             </div>
             {/* title part */}

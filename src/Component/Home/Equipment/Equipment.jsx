@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GiMuscleUp } from 'react-icons/gi';
 import { GrYoga } from 'react-icons/gr';
 import { IoIosFitness } from 'react-icons/io';
+// aos animation
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Equipment = () => {
+    useEffect(() => {
+        AOS.init({ duration: "1500" });
+    }, [])
+
     return (
         <div className='container mx-auto font-fontIbm pt-24'>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-5 grid-cols-1 items-center'>
@@ -14,7 +21,7 @@ const Equipment = () => {
                     </p>
                 </div>
                 {/* second */}
-                <div className='border p-4 bg-slate-200 rounded-lg hover:shadow-lg hover:bg-white'>
+                <div data-aos="fade-left" className='border p-4  bg-slate-200 rounded-lg hover:shadow-lg hover:bg-white'>
                     <div className='space-y-4'>
                         <GrYoga className='text-8xl' />
                         <h3 className='text-4xl font-bold'>Yoga Equipments</h3>
@@ -22,7 +29,7 @@ const Equipment = () => {
                     </div>
                 </div>
                 {/* three */}
-                <div className='border p-4 bg-slate-200 rounded-lg hover:shadow-lg hover:bg-white'>
+                <div data-aos="fade-left" className='border p-4 bg-slate-200 rounded-lg hover:shadow-lg hover:bg-white'>
                     <div className='space-y-4'>
                         <GiMuscleUp className='text-8xl' />
                         <h3 className='text-4xl font-bold'>Yoga Equipments</h3>
@@ -30,7 +37,7 @@ const Equipment = () => {
                     </div>
                 </div>
                 {/* four */}
-                <div className='border p-4 bg-slate-200 rounded-lg hover:shadow-lg hover:bg-white'>
+                <div data-aos="fade-left" className='border p-4 bg-slate-200 rounded-lg hover:shadow-lg hover:bg-white'>
                     <div className='space-y-4'>
                         <IoIosFitness className='text-8xl'/>
                         <h3 className='text-4xl font-bold'>Yoga Equipments</h3>
