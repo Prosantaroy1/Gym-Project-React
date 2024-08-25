@@ -16,8 +16,8 @@ const Equipment = () => {
                 className='container mx-auto font-fontIbm pt-24'>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-5 grid-cols-1 items-center'>
                     <div>
-                        <h3 className='text-5xl font-extrabold'>What we<br /> offer for you</h3>
-                        <p className='text-2xl font-medium pt-3'>
+                        <h3 className='text-5xl lg:text-start text-center font-extrabold'>What we<br /> offer for you</h3>
+                        <p className='text-2xl font-medium pt-3 lg:text-start text-center'>
                             It is a long established fact<br /> that a reader readable.
                         </p>
                     </div>

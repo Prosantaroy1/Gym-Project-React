@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { SiGoogledisplayandvideo360 } from 'react-icons/si';
 import bannerImg from '../../../assets/New folder/banner/dumbell-Bcy4gPfV.png'
-// aos animation
+// // aos animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 const Banner = () => {
     // 
@@ -14,10 +15,10 @@ const Banner = () => {
     return (
 
         <div className='bg-gradient-to-r from-[#ecdecf] 40% to-[#fff] to-60% py-24'>
-            <div className='container  mx-auto py-6 md:py-28 grid items-center grid-cols-1 md:grid-cols-2 '>
+            <div className='container ld:gap-2 gap-24  mx-auto py-12 md:py-28 grid  items-center grid-cols-1 md:grid-cols-2 '>
                 {/* banner title */}
                 <div className='font-fontIbm space-y-8' data-aos="fade-right">
-                    <h3 className='text-7xl font-bold leading-snug'>Gym Gives you the
+                    <h3 className='lg:text-7xl  text-4xl font-bold leading-snug'>Gym Gives you the
                         <br />perfect<span className='text-rose-600'> Health</span>
                     </h3>
                     <p className='font-semibold text-[#36424d]  text-2xl '>
@@ -51,7 +52,8 @@ const Banner = () => {
             </div>
 
         </div>
-    );
+        
+    )
 };
 
 export default Banner;

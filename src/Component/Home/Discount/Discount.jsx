@@ -10,7 +10,7 @@ const Discount = () => {
     return (
         <div className='container mx-auto mt-10 rounded-lg bg-red-100 py-28 flex flex-col justify-center items-center'>
             <div className='space-y-7'>
-                <h3 data-aos="fade-up" className='font-fontIbm text-center font-bold text-7xl text-black '>
+                <h3 data-aos="fade-up" className='font-fontIbm text-center font-bold lg:text-7xl text-3xl text-black '>
                     Get 20% Discount On Your<br/> First Order, Are You Ready<br/> To Buy
                 </h3>
                 <p data-aos="fade-up" className='font-fontIbm text-center text-2xl font-medium'>
